@@ -21,7 +21,7 @@ public class web_crawler {
 	}	
 	private static void crawl(int level, String url, ArrayList<String> visited)
 	{	
-		if(level <= 2)
+		if(level <= 5)
 		{	
 			Document doc = request(url,visited);
 			if(doc != null) {
