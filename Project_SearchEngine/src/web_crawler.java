@@ -6,6 +6,7 @@ import java.net.URL;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 
+
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -16,10 +17,11 @@ public class web_crawler {
 	{
 		String url = "https://en.wikipedia.org";
 		crawl(1,url, new ArrayList<String>());
+		
 	}	
 	private static void crawl(int level, String url, ArrayList<String> visited)
 	{	
-		if(level <= 5)
+		if(level <= 2)
 		{	
 			Document doc = request(url,visited);
 			if(doc != null) {
